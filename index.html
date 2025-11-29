@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Personal Portfolio Website</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="#fcfs">FCFS</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi there,</h1>
+            <h1>I'm Van!</h1>
+            <p>Frontend Developer</p>
+        </div>
+        <div class="home-img">
+            <img src="img2/5.jpg" alt="Van's Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img2/2.jpg" alt="About Me Image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <h3>Working Student and Frontend Developer</h3>
+            <p>My name is Lievan P. Alaman, a 24-year-old Cordova Public third-year irregular college student. As a working student, I balance academic and professional responsibilities while exploring coding through self-study. I immerse myself in all aspects of programming, learning step by step, and building the foundation for a promising future.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading"><span>My Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fas fa-code"></i>
+                <h3>Frontend Development</h3>
+                <p>Building responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing clean and user-friendly interfaces for websites and apps.</p>
+            </div>
+
+            <div class="skills-box">
+                <i class="fas fa-desktop"></i>
+                <h3>Tech Hardware</h3>
+                <p>Cleaning and maintaining laptops and PCs, ensuring optimal performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading"><span>Contact Me</span></h2>
+        <p class="subheading">I love to hear from you!</p>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Details</h3>
+                <p><strong>Phone:</strong> 09515438416 </p>
+                <p><strong>Email:</strong> lievanparojinog@gmail.com</p>
+                <p><strong>Address:</strong> Bankal Lapu-Lapu City, Cebu</p>
+                <p><strong>Working Hours:</strong> Mon-Fri, 8:00am - 5:00pm</p>
+                <a href="path-to-your-cv/my-cv.pdf" class="btn small-btn" download>Download My CV</a>
+            </div>
+        </div>
+    </section>
+
+<section class="fcfs" id="fcfs">
+    <h2 class="heading">FCFS Scheduling Algorithm</h2>
+    <p class="subheading">First Come First Serve CPU Scheduling</p>
+
+    <div class="fcfs-container">
+        <!-- Input Form -->
+        <form id="fcfs-form">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                    </tr>
+                </thead>
+                <tbody id="fcfs-inputs">
+                    <tr>
+                        <td><input type="text" placeholder="P1" required></td>
+                        <td><input type="number" placeholder="Arrival Time" required></td>
+                        <td><input type="number" placeholder="Burst Time" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="P2" required></td>
+                        <td><input type="number" placeholder="Arrival Time" required></td>
+                        <td><input type="number" placeholder="Burst Time" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="P3" required></td>
+                        <td><input type="number" placeholder="Arrival Time" required></td>
+                        <td><input type="number" placeholder="Burst Time" required></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" class="btn">Compute FCFS</button>
+        </form>
+
+        <!-- Result Table -->
+        <div id="fcfs-result">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Process</th>
+                        <th>Arrival Time</th>
+                        <th>Burst Time</th>
+                        <th>Completion Time</th>
+                        <th>Turnaround Time</th>
+                        <th>Waiting Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- JS will fill this -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+<link rel="stylesheet" href="style.css">
